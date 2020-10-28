@@ -1,4 +1,4 @@
 # Test Storybook CI Deployment with Chromatic
 
-## Created with Create React App
+Made with Create React App and following the Learn Storybook Tutorial
 
