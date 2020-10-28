@@ -1,3 +1,15 @@
+# v0.1.3 (Wed Oct 28 2020)
+
+#### ⚠️ Pushed to `master`
+
+- actually publishing to dist now... ([@irwinmck](https://github.com/irwinmck))
+
+#### Authors: 1
+
+- Mckenzie Irwin ([@irwinmck](https://github.com/irwinmck))
+
+---
+
 # v0.1.2 (Wed Oct 28 2020)
 
 #### 🐛 Bug Fix
