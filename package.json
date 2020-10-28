@@ -1,6 +1,6 @@
 {
-  "name": "storybook-ex",
-  "version": "0.1.0",
+  "name": "irwin-sb-ex",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
@@ -14,12 +14,22 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "chromatic": "npx chromatic --project-token 181hm5ld8f6 --exit-zero-on-changes"
+  },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
     "@storybook/addon-actions": "^6.0.27",
     "@storybook/addon-essentials": "^6.0.27",
@@ -47,8 +58,22 @@
     "@storybook/node-logger": "^6.0.27",
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.27",
+    "auto": "^9.61.0",
     "babel-loader": "^8.1.0",
     "chromatic": "^5.2.0",
+    "cross-env": "^7.0.2",
     "react-is": "^16.13.1"
-  }
+  },
+  "description": "Made with Create React App and following the Learn Storybook Tutorial",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irwinmck/storybook-ex.git"
+  },
+  "author": "Mckenzie Irwin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irwinmck/storybook-ex/issues"
+  },
+  "homepage": "https://github.com/irwinmck/storybook-ex#readme"
 }
